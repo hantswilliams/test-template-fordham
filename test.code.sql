@@ -3,7 +3,7 @@ WITH OrderBase AS (
     SELECT 
         o.order_id_new,
         o.customer_id,
-        c.customer_name,
+        c.customer_name_123,
         o.order_date,
         SUM(oi.quantity * oi.unit_price) AS order_total
     FROM orders o
