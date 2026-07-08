@@ -1,7 +1,7 @@
 WITH OrderBase AS (
     -- Step 1: Clean, transform, and consolidate order data from multiple tables
     SELECT 
-        o.order_id,
+        o.order_id_new,
         o.customer_id,
         c.customer_name,
         o.order_date,
